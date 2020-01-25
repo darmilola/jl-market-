@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/White"
+    android:orientation="vertical">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:textSize="17dp"
+        android:textColor="#000000"
+        android:gravity="left|center"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:id="@+id/completeOrderProductName"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentLeft="true"
+        android:text="1x   ddffsfffsfsfsPhoenix Fried rice jhh sdddsdfffffffff"/>
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:textSize="17dp"
+        android:textColor="#70000000"
+        android:gravity="right|center"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:id="@+id/completeOrderItemPrice"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"
+        android:text="2,500,000,000"/>
+</RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:src="@drawable/darkline"/>
+</LinearLayout>

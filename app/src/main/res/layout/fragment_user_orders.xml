@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.userOrders"
+    android:background="#ebebeb"
+    android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/cartorderrecyclerview"
+        android:layout_marginBottom="60dp"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/progressbarlayout"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:gravity="center">
+        <ProgressBar
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:id="@+id/nonetworklayout">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/no_connection"
+            android:id="@+id/nonetworkimage"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#90000000"
+            android:text="No Network Connection"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/nonetworktext"
+            android:textSize="23dp"/>
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Try Again"
+            android:textAllCaps="false"
+            android:textSize="17dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/nonetworkbutton"
+            android:background="@drawable/loginbuttondesign"
+            android:textColor="@color/White"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/errorlayout">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/erroricon"
+            android:id="@+id/errorimage"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#90000000"
+            android:text="Error Occured please try again"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/errortext"
+            android:textSize="23dp"/>
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Try Again"
+            android:textAllCaps="false"
+            android:textSize="17dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/errorbutton"
+            android:background="@drawable/loginbuttondesign"
+            android:textColor="@color/White"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:id="@+id/emptycartlayout">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/emptycart"
+            android:id="@+id/emptycartimage"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#90000000"
+            android:text="Your Cart is currently Empty"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/emptycarttext"
+            android:textSize="23dp"/>
+
+    </LinearLayout>
+
+
+
+    <Button
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:text="Complete Your Order"
+       android:textColor="@color/White"
+       android:textSize="20dp"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
+       android:textAllCaps="false"
+       android:layout_alignParentBottom="true"
+       android:layout_marginBottom="10dp"
+       android:id="@+id/completeyourorder"
+       android:background="@drawable/seevendorbuttondesign"/>
+
+
+</RelativeLayout>

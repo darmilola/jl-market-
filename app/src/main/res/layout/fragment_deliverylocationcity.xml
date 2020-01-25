@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:background="@color/White"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/cityloadingprogressBarlayout"
+        android:visibility="visible"
+        android:gravity="center">
+    <ProgressBar
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/cityloadingprogressbar"/>
+    </LinearLayout>
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="5dp"
+    android:visibility="gone"
+    android:id="@+id/deliverylocationcityrecyclerview">
+
+</androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:id="@+id/nonetworklayout">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/no_connection"
+            android:id="@+id/nonetworkimage"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#90000000"
+            android:text="No Network Connection"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/nonetworktext"
+            android:textSize="23dp"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="Try Again"
+            android:textAllCaps="false"
+            android:textSize="17dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/nonetworkbutton"
+            android:background="@drawable/loginbuttondesign"
+            android:textColor="@color/White"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/errorlayout">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/erroricon"
+            android:id="@+id/errorimage"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#90000000"
+            android:text="Error Occured please try again"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/errortext"
+            android:textSize="23dp"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="Try Again"
+            android:textAllCaps="false"
+            android:textSize="17dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/errorbutton"
+            android:background="@drawable/loginbuttondesign"
+            android:textColor="@color/White"/>
+    </LinearLayout>
+</LinearLayout>

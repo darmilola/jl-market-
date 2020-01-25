@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b70d0e28"
+    android:gravity="center"
+    android:orientation="vertical"
+   >
+<ImageView
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:layout_marginBottom="20dp"
+    android:src="@drawable/openingpageicon"/>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:text="The Home Of Campus \n E-Commerce"
+    android:gravity="center|top"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:id="@+id/openingpagecontenttitle"
+    android:textColor="#a0ffffff"
+    android:textSize="33dp"/>
+
+
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#ebebeb"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.electonicmarket.android.emarket.Activities.PaymentOptions">
+<androidx.appcompat.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/colorPrimary"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp"
+    android:id="@+id/paymentoptionstoolbar"
+    app:contentInsetRight="0dp"
+    app:contentInsetEnd="0dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Payment Options"
+            android:textSize="22dp"
+
+            android:id="@+id/paymentoptionstitle"
+            android:gravity="bottom"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom|left"
+
+            android:textColor="@color/White"/>
+    </RelativeLayout>
+</androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#50000000"
+        android:id="@+id/paymentmethods"
+        android:text="Payment Methods"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:src="@drawable/darkline"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/cardondeliverylayout"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/cardpayment"/>
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:layout_marginLeft="50dp"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:id="@+id/cardondelivery"
+            android:text="Debit card on Delivery"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="60dp"
+            android:src="@drawable/fronticon"/>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:src="@drawable/darkline"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/cashondeliverylayout"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/cashpayment"/>
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:id="@+id/cashondelivery"
+            android:layout_marginLeft="50dp"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:text="Cash on Delivery"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="60dp"
+            android:src="@drawable/fronticon"/>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:src="@drawable/darkline"/>
+</LinearLayout>

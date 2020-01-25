@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ebebeb"
+    tools:context="com.electonicmarket.android.emarket.Activities.ViewOrder">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <androidx.appcompat.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/colorPrimary"
+    app:contentInsetRight="0dp"
+    app:contentInsetLeft="0dp"
+    app:contentInsetEnd="0dp"
+    app:contentInsetStart="0dp"
+        android:id="@+id/viewordertoolbar">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="View Order"
+            android:gravity="center"
+            android:id="@+id/toolbartitle"
+            android:textColor="@color/White"
+            android:textSize="20dp"/>
+
+
+</androidx.appcompat.widget.Toolbar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/vieworderroot">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="70dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:text="Status"
+                    android:textSize="20dp"
+                    android:id="@+id/statustitle"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#90000000"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Awaiting confirmation"
+                    android:textSize="20dp"
+                    android:id="@+id/statusvalue"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"/>
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/viewOrderRecyclerView">
+
+            </androidx.recyclerview.widget.RecyclerView>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Subtotal"
+                    android:gravity="center"
+                    android:textSize="17dp"
+                    android:id="@+id/subtotal"
+                    android:textColor="#90000000"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentLeft="true"/>
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:text="N160,00000"
+                    android:gravity="right|center"
+                    android:textSize="17dp"
+                    android:maxLines="1"
+                    android:id="@+id/subtotalvalue"
+
+                    android:ellipsize="end"
+                    android:textColor="#90000000"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Service fee(3%)"
+                    android:gravity="center"
+                    android:textSize="17dp"
+                    android:id="@+id/servicefee"
+                    android:textColor="#90000000"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentLeft="true"/>
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="40dp"
+                    android:text="Paid"
+                    android:id="@+id/servicefeevalue"
+                    android:gravity="right|center"
+                    android:textSize="17dp"
+                    android:maxLines="1"
+
+                    android:ellipsize="end"
+                    android:textColor="#90000000"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:visibility="gone"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="VAT(5%)"
+                    android:gravity="center"
+                    android:id="@+id/vat"
+                    android:textSize="17dp"
+                    android:textColor="#90000000"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentLeft="true"/>
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="40dp"
+                    android:text="N500"
+                    android:gravity="right|center"
+                    android:textSize="17dp"
+                    android:maxLines="1"
+                    android:id="@+id/vatvalue"
+
+                    android:ellipsize="end"
+                    android:textColor="#90000000"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Delivery Fee"
+                    android:gravity="center"
+                    android:textSize="17dp"
+                    android:id="@+id/deliveryfee"
+                    android:textColor="#90000000"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentLeft="true"/>
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="40dp"
+                    android:text="N400"
+                    android:gravity="right|center"
+                    android:textSize="17dp"
+                    android:id="@+id/deliveryfeevalue"
+                    android:maxLines="1"
+                    android:maxLength="15"
+                    android:ellipsize="end"
+                    android:textColor="#90000000"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/darkline"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="40dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Total"
+                    android:id="@+id/Total"
+                    android:gravity="center"
+                    android:textSize="17dp"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="20dp"
+                    android:layout_alignParentLeft="true"/>
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="40dp"
+                    android:text="N16,000"
+                    android:gravity="right|center"
+                    android:textSize="17dp"
+                    android:id="@+id/totalvalue"
+                    android:maxLines="1"
+                    android:maxLength="15"
+                    android:ellipsize="end"
+                    android:textColor="#000000"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/darkline"/>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:id="@+id/vieworderprogress">
+        <ProgressBar
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:id="@+id/nonetworklayout">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/no_connection"
+            android:id="@+id/nonetworkimage"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#90000000"
+            android:text="No Network Connection"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/nonetworktext"
+            android:textSize="23dp"/>
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Try Again"
+            android:textAllCaps="false"
+            android:textSize="17dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/nonetworkbutton"
+            android:background="@drawable/loginbuttondesign"
+            android:textColor="@color/White"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/errorlayout">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/erroricon"
+            android:id="@+id/errorimage"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#90000000"
+            android:text="Error Occured please try again"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/errortext"
+            android:textSize="23dp"/>
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Try Again"
+            android:textAllCaps="false"
+            android:textSize="17dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/errorbutton"
+            android:background="@drawable/loginbuttondesign"
+            android:textColor="@color/White"/>
+    </LinearLayout>
+
+
+</LinearLayout>
+</LinearLayout>

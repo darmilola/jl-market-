@@ -1,0 +1,90 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="drawerArrowStyle">@style/drawerArrowStyle</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="RegisterTextField" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+        <item name="boxBackgroundColor">@android:color/transparent</item>
+        <item name="boxStrokeColor">@color/colorPrimary</item>
+        <item name="boxStrokeWidth">3dp</item>
+        <item name="android:textColorHint">@color/White</item>
+    </style>
+
+    <style name="BlackTextField" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">@color/black</item>
+        <item name="android:textColorHint">@color/grey</item>
+    </style>
+
+    <style name="dialogtheme" parent="Theme.MaterialComponents.Light.Dialog">
+        <item name="android:background">@color/White</item>
+    </style>
+
+
+    <style name="NewRegisterTextField" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+        <item name="boxBackgroundColor">@android:color/transparent</item>
+        <item name="boxStrokeColor">@color/colorPrimary</item>
+        <item name="boxStrokeWidth">3dp</item>
+        <item name="android:textColorHint">@color/White</item>
+    </style>
+    <style name="AddressTextField" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+        <item name="boxBackgroundColor">@android:color/transparent</item>
+        <item name="boxStrokeColor">@color/colorPrimary</item>
+        <item name="boxStrokeWidth">3dp</item>
+        <item name="android:textColorHint">@color/grey</item>
+    </style>
+
+    <style name="ErrorText" parent="TextAppearance.Design.Error">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@android:color/holo_red_light</item>
+    </style>
+
+    <style name="hintsize" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/transparent</item>
+        <item name="android:textColorHint">@color/transparent</item>
+    </style>
+    <style name="Dialog_Theme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowMinWidthMajor">100%</item>
+        <item name="android:windowMinWidthMinor">100%</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="drawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@android:color/white</item>
+    </style>
+     <style name="CollapsedAppBarTextSizeMedium" parent="@android:style/TextAppearance.Medium">
+      <item name="android:ellipsize">end</item>
+         <item name="android:textSize">21dp</item>
+
+         <item name="android:layout_marginLeft">30dp</item>
+         <item name="android:paddingLeft">40dp</item>
+     </style>
+
+    <style name="myratingbar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingbar_full</item>
+        <item name = "android:minHeight">23dp</item>
+        <item name = "android:maxHeight">23dp</item>
+    </style>
+
+    <style name="myratingbarsmall" parent="@android:style/Widget.Holo.Light.RatingBar.Small">
+        <item name = "android:minHeight">20dp</item>
+        <item name = "android:maxHeight">20dp</item>
+        <item name="android:progressTint">@color/colorPrimary</item>
+
+    </style>
+</resources>
+
+

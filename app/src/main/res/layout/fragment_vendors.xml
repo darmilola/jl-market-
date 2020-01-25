@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ebebeb"
+    tools:context=".Fragments.Vendor">
+
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone"
+    android:id="@+id/vendordisplayrecyclerview"
+    >
+
+</androidx.recyclerview.widget.RecyclerView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/vendorsearchrecyclerview"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:id="@+id/vendorprogressbarlayout">
+        <ProgressBar
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+            android:id="@+id/vendorloadingprogressbar"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/vendornovendorlayout">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="140dp"
+            android:src="@drawable/searchicon"
+            android:id="@+id/vendornovendorimage"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#90000000"
+            android:text="No vendor is delivering to this location please try a different location"
+            android:gravity="center"
+            android:id="@+id/novendortext"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="23dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/vendornovendorbynamelayout">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="140dp"
+            android:src="@drawable/searchicon"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#90000000"
+            android:text="No Vendor to Show"
+            android:gravity="center"
+            android:id="@+id/novendorbynametext"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="23dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:id="@+id/nonetworklayout">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/no_connection"
+            android:id="@+id/nonetworkimage"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#90000000"
+            android:text="No Network Connection"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/nonetworktext"
+            android:textSize="23dp"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="Try Again"
+            android:textAllCaps="false"
+            android:textSize="17dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/nonetworkbutton"
+            android:background="@drawable/loginbuttondesign"
+            android:textColor="@color/White"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/errorlayout">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/erroricon"
+            android:id="@+id/errorimage"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#90000000"
+            android:text="Error Occured please try again"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/errortext"
+            android:textSize="23dp"/>
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Try Again"
+            android:textAllCaps="false"
+            android:textSize="17dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/errorbutton"
+            android:background="@drawable/loginbuttondesign"
+            android:textColor="@color/White"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.electonicmarket.android.emarket.pinpage">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Send Cloud Message"
+        android:textColor="#ffffff"
+        android:id="@+id/sendmessage"
+        android:layout_marginTop="40dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:id="@+id/message"
+        android:text="Type message here"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="To"
+        android:textSize="30dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:id="@+id/to"
+        android:text=""/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Get My Id"
+        android:textColor="#ffffff"
+        android:id="@+id/getmyid"
+        android:layout_marginTop="40dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="My Id"
+        android:textSize="30dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:id="@+id/myid"
+        android:text=""/>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

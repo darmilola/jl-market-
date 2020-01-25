@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.electonicmarket.android.emarket.Activities.VendorEshop">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/colorPrimary"
+            app:collapsedTitleGravity="center"
+            app:titleEnabled="true"
+            app:collapsedTitleTextAppearance="@style/CollapsedAppBarTextSizeMedium"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:toolbarId="@+id/toolbar">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/White"
+                android:orientation="vertical">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    xmlns:fresco = "http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:id="@+id/vendorlogo"
+                    fresco:placeholderImage="@drawable/shopplaceholder"
+                    fresco:actualImageScaleType="fitXY"
+                    fresco:placeholderImageScaleType="fitXY"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp">
+                    <TextView
+                        android:layout_width="220dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Phoenix Chinesesssssssssssssss"
+                        android:id="@+id/vendorname"
+                        android:textColor="#000000"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:layout_alignParentLeft="true"
+                        android:textSize="21dp"/>
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="7dp"
+                        android:text="150 Mins"
+
+                        android:textColor="#99000000"
+                        android:gravity="right|center"
+                        android:id="@+id/vendorshopdeliverytime"
+                        android:layout_alignParentRight="true"
+                        android:textSize="18dp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="155dp"
+                        android:layout_height="30dp"
+                        android:gravity="center|left"
+                        android:text="Min Order N 1000"
+                        android:id="@+id/Minorder"
+
+                        android:textColor="#99000000"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:text="Delivery Fee N 500"
+                        android:gravity="center|right"
+                        android:textColor="#99000000"
+                        android:id="@+id/deliveryfee"
+
+                        android:textSize="15dp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+                    <LinearLayout
+                        android:layout_width="240dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="left"
+                        android:layout_alignParentLeft="true"
+                        android:orientation="horizontal">
+                        <RatingBar
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:numStars="5"
+                            android:id="@+id/eshopratingbar"
+                            style="@style/myratingbar"
+                            android:rating="0"/>
+
+                        <TextView
+                            android:layout_width="60dp"
+                            android:layout_height="40dp"
+                            android:id="@+id/reviewscount"
+                            android:text="(999+)"
+                            android:layout_marginTop="2dp"
+                            android:gravity="center|left"
+                            android:textColor="#90000000"
+
+
+                            android:textSize="17dp"/>
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/eshoptoolbar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:layout_collapseMode="pin"
+                app:contentInsetLeft="0dp"
+                app:contentInsetStart="0dp"
+                app:contentInsetRight="0dp"
+                app:contentInsetEnd="0dp"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|right">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/vendoreshopinfoicon"
+                        android:src="@drawable/newinfo"
+                        android:foregroundGravity="right"/>
+                </RelativeLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_vendor_eshop" />
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

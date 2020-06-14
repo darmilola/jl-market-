@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     android:orientation="vertical"
     android:background="@color/White"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -54,8 +53,8 @@
             android:id="@+id/nonetworktext"
             android:textSize="23dp"/>
         <Button
-            android:layout_width="100dp"
-            android:layout_height="40dp"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
             android:text="Try Again"
             android:textAllCaps="false"
             android:textSize="17dp"
@@ -90,8 +89,8 @@
             android:id="@+id/errortext"
             android:textSize="23dp"/>
         <Button
-            android:layout_width="100dp"
-            android:layout_height="40dp"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
             android:text="Try Again"
             android:textAllCaps="false"
             android:textSize="17dp"

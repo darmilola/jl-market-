@@ -139,9 +139,7 @@ public class vendorinformation extends AppCompatActivity {
 
     }
     private void initializeView() {
-        WindowManager.LayoutParams layoutParams = getWindow().getAttributes();
-        layoutParams.screenBrightness = 0.5f;
-        getWindow().setAttributes(layoutParams);
+
         mapView = findViewById(R.id.vendorinformationmap);
         ratingBar = findViewById(R.id.vendorinformationratingbar);
         dealprogressbar = findViewById(R.id.dealprogressbar);

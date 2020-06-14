@@ -102,9 +102,7 @@ public class deliverylocationcity extends Fragment {
     }
 
     private void InitializeView() {
-        WindowManager.LayoutParams layoutParams = getActivity().getWindow().getAttributes();
-        layoutParams.screenBrightness = 1.0f;
-        getActivity().getWindow().setAttributes(layoutParams);
+
 
         progressbarlayout = view.findViewById(R.id.cityloadingprogressBarlayout);
 

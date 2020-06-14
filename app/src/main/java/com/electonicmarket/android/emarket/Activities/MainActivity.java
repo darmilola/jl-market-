@@ -305,9 +305,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         infolayout = findViewById(R.id.infolayout);
         settingslayout = findViewById(R.id.settingslayout);
         logoutlayout = findViewById(R.id.logoutlayout);
-    WindowManager.LayoutParams layoutParams = getWindow().getAttributes();
-    layoutParams.screenBrightness = 0.5f;
-    getWindow().setAttributes(layoutParams);
+
     toolbar  = (Toolbar) findViewById(R.id.maintoolbar);
     setSupportActionBar(toolbar);
     getSupportActionBar().setDisplayShowTitleEnabled(false);

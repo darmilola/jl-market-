@@ -37,9 +37,7 @@ public class privacypolicy extends AppCompatActivity {
             title = findViewById(R.id.privacypolicytitle);
             policytext = findViewById(R.id.policytext);
 
-        WindowManager.LayoutParams layoutParams = getWindow().getAttributes();
-        layoutParams.screenBrightness = 0.5f;
-        getWindow().setAttributes(layoutParams);
+
             setSupportActionBar(toolbar);
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setDisplayShowHomeEnabled(true);

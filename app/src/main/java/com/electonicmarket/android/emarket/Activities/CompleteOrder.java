@@ -145,9 +145,7 @@ public class CompleteOrder extends AppCompatActivity {
 
     private void initializeview(){
 
-        WindowManager.LayoutParams layoutParams = getWindow().getAttributes();
-        layoutParams.screenBrightness = 0.5f;
-        getWindow().setAttributes(layoutParams);
+
 
 
         noconnection = findViewById(R.id.nonetworklayout);

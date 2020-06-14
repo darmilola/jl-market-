@@ -106,9 +106,7 @@ public class changepassword extends AppCompatActivity {
         toolbar.getNavigationIcon().setColorFilter(getResources().getColor(R.color.White), PorterDuff.Mode.SRC_ATOP);
 
 
-        WindowManager.LayoutParams layoutParams = getWindow().getAttributes();
-        layoutParams.screenBrightness = 1.0f;
-        getWindow().setAttributes(layoutParams);
+
     }
 
     private class changepasswordtask extends AsyncTask{

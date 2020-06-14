@@ -61,9 +61,7 @@ public class FullMapActivity extends AppCompatActivity {
     }
 
     private void initializeView(){
-        WindowManager.LayoutParams layoutParams = getWindow().getAttributes();
-        layoutParams.screenBrightness = 0.5f;
-        getWindow().setAttributes(layoutParams);
+
         savepin = findViewById(R.id.savepin);
         Typeface customfont= Typeface.createFromAsset(getAssets(),"Kylo-Light.otf");
         savepin.setTypeface(customfont);

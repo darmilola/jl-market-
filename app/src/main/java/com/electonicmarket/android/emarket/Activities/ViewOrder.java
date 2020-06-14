@@ -97,9 +97,7 @@ public class ViewOrder extends AppCompatActivity {
     }
 
     private void initializeview() {
-        WindowManager.LayoutParams layoutParams = getWindow().getAttributes();
-        layoutParams.screenBrightness = 0.5f;
-        getWindow().setAttributes(layoutParams);
+
         root = findViewById(R.id.vieworderroot);
         viewordertoolbar = findViewById(R.id.viewordertoolbar);
         statustitle = findViewById(R.id.statustitle);

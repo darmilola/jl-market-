@@ -97,9 +97,7 @@ public class PaymentOptions extends AppCompatActivity {
         });
     }
     private void initView(){
-        WindowManager.LayoutParams layoutParams = getWindow().getAttributes();
-        layoutParams.screenBrightness = 0.5f;
-        getWindow().setAttributes(layoutParams);
+
         paymentoptions = findViewById(R.id.paymentoptionstitle);
         paymentmethods = findViewById(R.id.paymentmethods);
         cardondelivery = findViewById(R.id.cardondelivery);

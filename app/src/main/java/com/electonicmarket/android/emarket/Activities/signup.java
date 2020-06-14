@@ -61,6 +61,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.ByteArrayOutputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
@@ -277,14 +278,35 @@ public class signup extends AppCompatActivity {
         }
     }
 
-    public String getStringImage(Bitmap bitmap) {
 
-        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-        bitmap.compress(Bitmap.CompressFormat.PNG, 50, byteArrayOutputStream);
-        byte[] imagebytes = byteArrayOutputStream.toByteArray();
-        String encodedImage = Base64.encodeToString(imagebytes, Base64.DEFAULT);
+
+    public static String getStringImage(Bitmap bitmap){
+        final int MAX_IMAGE_SIZE = 500 * 1024; // max final file size in kilobytes
+        byte[] bmpPicByteArray;
+
+        Bitmap scBitmap  = Bitmap.createScaledBitmap(bitmap, 300, 300, false);
+
+
+        int compressQuality = 100; // quality decreasing by 5 every loop.
+        int streamLength;
+        do{
+            ByteArrayOutputStream bmpStream = new ByteArrayOutputStream();
+            Log.d("compressBitmap", "Quality: " + compressQuality);
+            scBitmap.compress(Bitmap.CompressFormat.JPEG, compressQuality, bmpStream);
+            bmpPicByteArray = bmpStream.toByteArray();
+            streamLength = bmpPicByteArray.length;
+            compressQuality -= 5;
+            Log.d("compressBitmap", "Size: " + streamLength/1024+" kb");
+        }while (streamLength >= MAX_IMAGE_SIZE);
+
+        String encodedImage = Base64.encodeToString(bmpPicByteArray, Base64.DEFAULT);
         return encodedImage;
+
     }
+
+
+
+
 
 
     private Boolean isNetworkAvailable() {
@@ -294,9 +316,7 @@ public class signup extends AppCompatActivity {
         return activeNetworkInfo != null && activeNetworkInfo.isConnected();
     }
         private void initializeView() {
-            WindowManager.LayoutParams layoutParams = getWindow().getAttributes();
-            layoutParams.screenBrightness = 0.5f;
-            getWindow().setAttributes(layoutParams);
+
             // ActionBar actionBar = getSupportActionBar();
             //actionBar.hide();,
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {

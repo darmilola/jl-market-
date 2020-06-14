@@ -61,9 +61,7 @@ public class ChooseDeliveryLocation extends AppCompatActivity implements deliver
         toolbar.getNavigationIcon().setColorFilter(getResources().getColor(R.color.White), PorterDuff.Mode.SRC_ATOP);
 
 
-        WindowManager.LayoutParams layoutParams = getWindow().getAttributes();
-        layoutParams.screenBrightness = 0.5f;
-        getWindow().setAttributes(layoutParams);
+
     }
 
     @Override

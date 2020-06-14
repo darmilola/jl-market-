@@ -19,6 +19,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.widget.Toolbar;
 
 import com.electonicmarket.android.emarket.Adapter.AreaAdapter;
@@ -227,7 +228,7 @@ public class deliverylocationArea extends Fragment {
                 }
             }
 
-            return null;
+            return serverResponse;
         }
 
         protected void onPostExecute(Object result) {
@@ -252,7 +253,8 @@ public class deliverylocationArea extends Fragment {
                     setUpAdapter((ArrayList<DeliveryArea>) result);
                     // Toast.makeText(getContext(), result.toString(), Toast.LENGTH_SHORT).show();
                 }
-            }
+
+                      }
             else{
 
                 progressbarlayout.setVisibility(View.GONE);

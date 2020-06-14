@@ -258,9 +258,7 @@ private void InitializeView(){
 
 
 
-    WindowManager.LayoutParams layoutParams = getWindow().getAttributes();
-    layoutParams.screenBrightness = 0.5f;
-    getWindow().setAttributes(layoutParams);
+
     setSupportActionBar(toolbar);
     getSupportActionBar().setTitle("");
 

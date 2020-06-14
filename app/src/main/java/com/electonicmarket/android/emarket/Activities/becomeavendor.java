@@ -111,9 +111,7 @@ public class becomeavendor extends AppCompatActivity {
        title.setTypeface(customfont);
        apply.setTypeface(customfont);
 
-        WindowManager.LayoutParams layoutParams = getWindow().getAttributes();
-        layoutParams.screenBrightness = 0.5f;
-        getWindow().setAttributes(layoutParams);
+
 
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);

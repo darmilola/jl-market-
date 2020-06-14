@@ -113,9 +113,7 @@ public class forgotpassword extends AppCompatActivity {
         security_answer_title.setTypeface(customfont);
         security_answer_value.setTypeface(customfont);
 
-        WindowManager.LayoutParams layoutParams = getWindow().getAttributes();
-        layoutParams.screenBrightness = 0.5f;
-        getWindow().setAttributes(layoutParams);
+
 
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
